@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Productivity Tracker</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="full-page">
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1><i class="fas fa-chart-line"></i> Dev Productivity Tracker</h1>
+        <nav id="Download">
+        <button id="downloadPDF" class="primary"><i class="fas fa-file-pdf"></i> Download PDF</button>
+        <button id="downloadCSV" class="primary"><i class="fas fa-file-csv"></i> Download CSV</button>
+        </nav>
+    </header>
+
+    <!-- Main Grid Layout -->
+    <main class="grid-layout">
+
+        <!-- Daily Expense Log -->
+        <section class="card">
+            <h2><i class="fas fa-wallet"></i> Daily Expense</h2>
+            <div class="input-row">
+                <input id="amount" type="number" placeholder="Amount">
+                <select id="category">
+                    <option disabled selected>Choose Category</option>
+                    <option>Food</option>
+                    <option>Transport</option>
+                    <option>Bills</option>
+                    <option>Shopping</option>
+                    <option>Entertainment</option>
+                    <option>Health</option>
+                    <option>Education</option>
+                    <option>Savings</option>
+                    <option>Investment</option>
+                    <option>Other</option>
+                </select>
+                <button id="addExpense" class="primary"><i class="fas fa-plus"></i> Add</button>
+            </div>
+            <div class="filter-row">
+                <label>Filter:
+                    <select id="filterCategory">
+                        <option value="All">All</option>
+                        <option>Food</option>
+                        <option>Transport</option>
+                        <option>Bills</option>
+                        <option>Shopping</option>
+                        <option>Entertainment</option>
+                        <option>Health</option>
+                        <option>Education</option>
+                        <option>Savings</option>
+                        <option>Investment</option>
+                        <option>Other</option>
+                    </select>
+                </label>
+                <button id="clearExpenses" class="danger"><i class="fas fa-trash"></i> Clear All</button>
+            </div>
+            <ul id="expenseList"></ul>
+            <p id="totalExpense">Total: $0</p>
+        </section>
+
+        <!-- Pomodoro & Work Hours Tracker -->
+        <section class="card">
+            <h2><i class="fas fa-stopwatch"></i> Pomodoro & Work Hours</h2>
+
+            <div class="input-row">
+                <input id="customMinutes" type="number" placeholder="Set Minutes">
+                <button id="setTimer" class="primary"><i class="fas fa-clock"></i> Set Timer</button>
+            </div>
+
+            <div class="input-row">
+                <input id="dailyGoalInput" type="number" placeholder="Set Daily Goal (hours)">
+                <button id="setDailyGoalBtn" class="primary"><i class="fas fa-bullseye"></i> Set Goal</button>
+            </div>
+
+            <div class="timer-display">
+                <span id="timerDisplay">25:00</span>
+                <span id="sessionType">Session: Work</span>
+            </div>
+
+            <div class="timer-buttons">
+                <button id="startTimer" title="Start" class="success"><i class="fas fa-play"></i></button>
+                <button id="pauseTimer" title="Pause" class="danger"><i class="fas fa-pause"></i></button>
+                <button id="resetTimer" title="Reset" class="primary"><i class="fas fa-redo-alt"></i></button>
+            </div>
+
+            <div class="progress-container">
+                <label>Current Session Progress</label>
+                <div class="progress">
+                    <div id="workProgress" class="progress-bar"></div>
+                </div>
+
+                <label>Daily Goal Progress </label>
+                <div class="progress">
+                    <div id="dailyGoalProgress" class="progress-bar"></div>
+                </div>
+            </div>
+
+            <div class="summary-info">
+                <p id="workSummary">Today: 0 / 6 hours</p>
+                <p id="sessionCount">Pomodoros Completed: 0</p>
+            </div>
+        </section>
+
+        <!-- Notes Section -->
+        <section class="card notes-card">
+            <h2><i class="fas fa-sticky-note"></i> Notes</h2>
+            <textarea id="dailyNote" placeholder="Write your note here..." rows="2"></textarea>
+            <div class="input-row">
+                <select id="noteCategory">
+                    <option disabled selected>Choose Category</option>
+                    <option>Work</option>
+                    <option>Personal</option>
+                    <option>Idea</option>
+                    <option>Reminder</option>
+                    <option>Other</option>
+                </select>
+                <button id="saveNote" class="primary"><i class="fas fa-save"></i> Save</button>
+            </div>
+            <ul id="notesList"></ul>
+        </section>
+
+        <!-- Weekly Summary Chart & Export -->
+        <section class="card">
+            <h2><i class="fas fa-chart-bar"></i> Weekly Summary</h2>
+        
+            <h3>Pomodoro & Work Hours</h3>
+            <canvas id="workChart"></canvas>
+        
+            <h3>Expense Summary</h3>
+            <canvas id="expensePieChart"></canvas>
+        
+            <div id="weekSummary" class="week-summary"></div>
+        </section>
+
+
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Footer -->
+    <footer>
+        <span>Made with ❤️ by MD Mutasim Billah Saad</span>
+        <a href="https://github.com/Md-Saad-1289" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

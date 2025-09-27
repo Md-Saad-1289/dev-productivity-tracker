@@ -1,0 +1,422 @@
+/* ================================
+   🎨 Sami Theme (Dark/Blue) — Full Screen, Responsive, Professional
+================================ */
+:root {
+    --primary: #0077b6;
+    --primary-dark: #023e8a;
+    --accent: #00b4d8;
+    --accent-light: #90e0ef;
+    --secondary: #adb5bd;
+    --danger: #ef476f;
+    --success: #06d6a0;
+    --bg: #0d1b2a;
+    --card-bg: #1b263b;
+    --text: #e0f7fa;
+    --radius: 14px;
+    --shadow: 0 10px 30px rgba(3, 10, 20, 0.55);
+    --transition: all 0.25s ease;
+    --footer-bg: #0d1b2a;
+    --muted: rgba(235, 245, 255, 0.55);
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: var(--transition);
+}
+
+html,
+body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
+    background: linear-gradient(180deg, #08121a 0%, var(--bg) 100%);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 180, 216, 0.3);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, var(--primary-dark), var(--primary));
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar h1 {
+    font-size: 1.2rem;
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+    color: #fff;
+}
+
+.navbar nav button {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    color: #fff;
+    padding: .45rem .85rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.navbar nav button:hover {
+    background: #fff;
+    color: var(--primary-dark);
+}
+
+/* Grid layout - full screen */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    padding: 1.5rem;
+    max-width: 1600px;
+    width: 100%;
+    margin: 1rem auto;
+    flex: 1;
+    /* make grid stretch to fill remaining screen */
+}
+
+/* Card */
+.card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 1.2rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    min-height: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 50px rgba(3, 10, 20, 0.75);
+}
+
+.card h2 {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    color: var(--accent-light);
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(0, 180, 216, 0.08);
+    padding-bottom: .5rem;
+}
+
+/* Inputs & buttons */
+.input-row,
+.filter-row {
+    display: flex;
+    gap: .6rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+input,
+select,
+textarea {
+    background: #162433;
+    color: var(--text);
+    border: 1px solid rgba(144, 224, 239, 0.07);
+    padding: .6rem .8rem;
+    border-radius: 12px;
+    outline: none;
+    font-size: .95rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    box-shadow: 0 6px 18px rgba(0, 180, 216, 0.1);
+    border-color: var(--accent-light);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    padding: .55rem 1rem;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+button.primary {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: #fff;
+}
+
+button.success {
+    background: var(--success);
+    color: #063;
+}
+
+button.danger {
+    background: var(--danger);
+    color: #fff;
+}
+
+/* Expense list */
+#expenseList {
+    list-style: none;
+    max-height: 350px;
+    overflow: auto;
+    padding-right: 6px;
+    margin-top: .8rem;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .65rem .8rem;
+    margin-bottom: .6rem;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.015), rgba(0, 0, 0, 0.03));
+    border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+/* Timer */
+.timer-display {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#timerDisplay {
+    font-family: "Courier New", monospace;
+    font-size: 1.7rem;
+}
+
+.timer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: .6rem;
+    margin-bottom: .5rem;
+}
+
+.progress-container {
+    margin-top: .8rem;
+}
+
+.progress {
+    height: 14px;
+    background: #0f2233;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--accent-light), var(--accent));
+    transition: width .5s ease;
+}
+
+/* Notes Section */
+#dailyNote {
+    width: 100%;
+    min-height: 120px;
+    resize: vertical;
+    background: #122233;
+    color: var(--text);
+    border-radius: 12px;
+    padding: .7rem;
+    font-size: .95rem;
+    border: 1px solid rgba(144, 224, 239, 0.05);
+}
+
+#notesList {
+    list-style: none;
+    padding: .4rem 0;
+    max-height: 300px;
+    overflow: auto;
+}
+
+#notesList li {
+    position: relative;
+    padding: 1rem;
+    border-radius: 14px;
+    margin-bottom: 0.8rem;
+    background: linear-gradient(180deg, rgba(0, 119, 182, 0.04), rgba(0, 0, 0, 0.02));
+    border-left: 4px solid rgba(0, 180, 216, 0.25);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#notesList li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.88rem;
+    color: var(--muted);
+    margin-bottom: 0.4rem;
+}
+
+.note-category {
+    font-weight: 700;
+    color: var(--accent-light);
+}
+
+.note-text {
+    color: var(--text);
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 0.6rem;
+}
+
+.note-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Edit & Delete buttons */
+.note-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    padding: 0.35rem 0.6rem;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.25s ease;
+}
+
+/* Edit button */
+.note-buttons button.edit {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: #fff;
+}
+
+.note-buttons button.edit:hover {
+    background: linear-gradient(135deg, var(--accent), var(--primary));
+    transform: scale(1.08);
+    box-shadow: 0 6px 18px rgba(0, 180, 216, 0.3);
+}
+
+/* Delete button */
+.note-buttons button.delete {
+    background: rgba(239, 71, 111, 0.15);
+    color: var(--danger);
+}
+
+.note-buttons button.delete:hover {
+    background: rgba(239, 71, 111, 0.3);
+    transform: scale(1.08);
+    box-shadow: 0 6px 18px rgba(239, 71, 111, 0.25);
+}
+
+/* Charts */
+canvas {
+    width: 100% !important;
+    height: 240px !important;
+    border-radius: 12px;
+    background: rgba(10, 18, 26, 0.25);
+    padding: .5rem;
+}
+
+/* Weekly Summary small stats */
+.week-summary p {
+    margin: .35rem 0;
+    color: var(--muted);
+    font-size: .95rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: var(--muted);
+    background: transparent;
+}
+
+/* Toast */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: #fff;
+    padding: .6rem 1rem;
+    border-radius: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease, transform .3s ease;
+    z-index: 999;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+}
+
+/* Responsive tweaks */
+@media (max-width: 880px) {
+    .grid-layout {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    canvas {
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 520px) {
+    .navbar h1 {
+        font-size: 1rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    #dailyNote {
+        min-height: 90px;
+    }
+
+    .note-buttons {
+        justify-content: flex-end;
+    }
+}
