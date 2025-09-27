@@ -1,42 +1,52 @@
 # 💻 Dev Productivity Tracker
 
+![GitHub Repo Size](https://img.shields.io/github/repo-size/Md-Saad-1289/dev-productivity-tracker?color=blue)
+![GitHub stars](https://img.shields.io/github/stars/Md-Saad-1289/dev-productivity-tracker?color=yellow)
+![GitHub license](https://img.shields.io/github/license/Md-Saad-1289/dev-productivity-tracker?color=green)
 
-**Dev Productivity Tracker** is a comprehensive web application designed to help developers and professionals monitor their daily work hours, manage Pomodoro sessions, track expenses, and organize notes. With a sleek, responsive interface and powerful features, it aims to enhance productivity and time management.
+**Dev Productivity Tracker** is a comprehensive web application designed to help developers and professionals:
+
+- Track daily work hours
+- Manage Pomodoro sessions
+- Monitor expenses
+- Organize notes
+
+With a clean, responsive interface, charts, and export options, it helps maximize productivity and time management.
 
 ---
 
 ## 🚀 Features
 
-- **Expense Tracker**
-  - Add, edit, and delete expenses
-  - Filter expenses by category
-  - Visualize expenses with pie charts
-  - Clear all expenses with a single click
+### Expense Tracker
+- Add, edit, and delete expenses
+- Filter expenses by category
+- Visualize expenses with pie charts
+- Clear all expenses with one click
 
-- **Pomodoro Timer**
-  - Start, pause, and reset timer
-  - Set custom work and break durations
-  - Track completed Pomodoros
-  - Visual progress bar for sessions
-  - Daily work hours tracking
+### Pomodoro Timer
+- Start, pause, and reset timer
+- Set custom work and break durations
+- Track completed Pomodoros
+- Visual progress bar for sessions
+- Daily work hours tracking
 
-- **Daily Goal Tracker**
-  - Set and monitor daily work hour goals
-  - Progress bar and summary statistics
+### Daily Goal Tracker
+- Set and monitor daily work hour goals
+- Progress bar and summary statistics
 
-- **Notes Section**
-  - Add, edit, and delete notes
-  - Categorize notes for better organization
-  - Track date and time for each note
+### Notes Section
+- Add, edit, and delete notes
+- Categorize notes for better organization
+- Track date and time for each note
 
-- **Charts & Weekly Summary**
-  - Work hours bar chart
-  - Expense pie chart
-  - Weekly summary with total expenses, average work hours, and best day
+### Charts & Weekly Summary
+- Work hours bar chart
+- Expense pie chart
+- Weekly summary with total expenses, average work hours, and best day
 
-- **Export Options**
-  - Export weekly report as **PDF**
-  - Export weekly data as **CSV**
+### Export Options
+- Export weekly report as **PDF**
+- Export weekly data as **CSV**
 
 ---
 
@@ -45,21 +55,41 @@
 - HTML5, CSS3, JavaScript (Vanilla)
 - [Chart.js](https://www.chartjs.org/) – for data visualization
 - [jsPDF](https://github.com/parallax/jsPDF) – for PDF export
-- LocalStorage – for persistent data storage
+- LocalStorage – persistent data storage
 
 ---
 
-## 🚀 Getting Started
+## 🏗️ Installation & Setup
 
-To run the application locally:
+Follow these steps to run the app locally:
 
-1. Clone the repository:
+### 1. Clone the repository
 
-   ```bash
-   git clone https://github.com/Md-Saad-1289/dev-productivity-tracker.git
-
-2. Navigate to the Project Directory
+```bash
+git clone https://github.com/Md-Saad-1289/dev-productivity-tracker.git
+```
+### 2. Navigate to the project directory
 
 ```bash
 cd dev-productivity-tracker
+```
+### 3. Open the project
+Since this is a static web application, you can open index.html directly:
 
+Right-click → Open With → Browser
+OR use VS Code Live Server (recommended for auto-refresh):
+```bash
+# Open project in VS Code
+# Right-click index.html → Open with Live Server
+```
+### 4. Start using the app
+
+ -Add expenses, track Pomodoros, set daily goals, and take notes.
+
+ -Use the PDF and CSV buttons to export weekly reports.
+
+---
+
+## ✍️ Author
+ Md Saad – [GitHub Profile](https://github.com/Md-Saad-1289)
+   -- Email: mdmutasimbillahsaad@gmail.com
