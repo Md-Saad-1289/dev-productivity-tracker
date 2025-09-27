@@ -1,9 +1,5 @@
 # 💻 Dev Productivity Tracker
-
-![GitHub Repo Size](https://img.shields.io/github/repo-size/Md-Saad-1289/dev-productivity-tracker?color=blue)
-![GitHub stars](https://img.shields.io/github/stars/Md-Saad-1289/dev-productivity-tracker?color=yellow)
-![GitHub license](https://img.shields.io/github/license/Md-Saad-1289/dev-productivity-tracker?color=green)
-
+---
 **Dev Productivity Tracker** is a comprehensive web application designed to help developers and professionals:
 
 - Track daily work hours
@@ -87,8 +83,6 @@ OR use VS Code Live Server (recommended for auto-refresh):
  -Add expenses, track Pomodoros, set daily goals, and take notes.
 
  -Use the PDF and CSV buttons to export weekly reports.
-
----
 
 ---
 
