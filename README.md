@@ -49,8 +49,6 @@
 
 ---
 
----
-
 ## 🚀 Getting Started
 
 To run the application locally:
