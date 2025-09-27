@@ -84,7 +84,6 @@ OR use VS Code Live Server (recommended for auto-refresh):
 
  -Use the PDF and CSV buttons to export weekly reports.
 
----
 
 ## ✍️ Author
 
