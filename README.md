@@ -1,6 +1,5 @@
 # 💻 Dev Productivity Tracker
 
-![Dev Productivity Tracker](https://github.com/Md-Saad-1289/dev-productivity-tracker/blob/main/assets/screenshot.png)
 
 **Dev Productivity Tracker** is a comprehensive web application designed to help developers and professionals monitor their daily work hours, manage Pomodoro sessions, track expenses, and organize notes. With a sleek, responsive interface and powerful features, it aims to enhance productivity and time management.
 
@@ -49,12 +48,6 @@
 - LocalStorage – for persistent data storage
 
 ---
-
-## 📸 Screenshots
-
-![Expense Tracker](https://github.com/Md-Saad-1289/dev-productivity-tracker/blob/main/assets/expense-tracker.png)
-![Pomodoro Timer](https://github.com/Md-Saad-1289/dev-productivity-tracker/blob/main/assets/pomodoro-timer.png)
-![Notes Section](https://github.com/Md-Saad-1289/dev-productivity-tracker/blob/main/assets/notes-section.png)
 
 ---
 
