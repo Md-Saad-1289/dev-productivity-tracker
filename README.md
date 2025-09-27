@@ -94,22 +94,8 @@ OR use VS Code Live Server (recommended for auto-refresh):
 
 ## ✍️ Author
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/Md-Saad-1289">
-        <img src="https://avatars.githubusercontent.com/Md-Saad-1289" width="100px;" alt="Md Saad"/>
-        <br />
-        <sub><b>Md Saad</b></sub>
-      </a>
-      <br />
-      <a href="mailto:mdmutasimbillahsaad@gmail.com">
-        📧 Email
-      </a>
-      <br />
-      <a href="https://github.com/Md-Saad-1289" target="_blank">
-        💻 GitHub
-      </a>
-    </td>
-  </tr>
+**MD Mutasim Billah Saad**  
+GitHub: [https://github.com/Md-Saad-1289](https://github.com/Md-Saad-1289)  
+Email: mdmutasimbillahsaad@gmail.com
+
 </table>
