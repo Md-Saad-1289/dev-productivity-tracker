@@ -57,3 +57,9 @@ To run the application locally:
 
    ```bash
    git clone https://github.com/Md-Saad-1289/dev-productivity-tracker.git
+
+2. Navigate to the Project Directory
+
+```bash
+cd dev-productivity-tracker
+
