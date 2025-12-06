@@ -83,6 +83,13 @@ OR use VS Code Live Server (recommended for auto-refresh):
  -Add expenses, track Pomodoros, set daily goals, and take notes.
 
  -Use the PDF and CSV buttons to export weekly reports.
+## 🌍 Live Preview  
+
+Get a quick look at the **Dev Productivity Tracker** — clean, fast, and beautifully designed to boost your daily workflow.
+
+👉 **🔗 Live Site:**  
+[🚀 Open Dev Productivity Tracker](https://md-saad-1289.github.io/dev-productivity-tracker/)
+
 
 
 ## ✍️ Author
